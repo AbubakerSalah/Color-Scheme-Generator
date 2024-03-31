@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>ColorSchemeG</title>
+</head>
+<body>
+        <header>
+            <div class="tilte">
+                <h1> Color Scheme Generator 🎨</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="top-section">
+                <div class="top-container">
+                    <input type="color" 
+                    id="color"
+                    class="color-picker"
+                    value="#811CFD" >
+                    <select name="dropdown" id="dropdown-options" class="dropdown">
+                        <option value = "monochrome">Monochrome</option>
+                        <option value = "monochrome-dark">Monochrome-dark</option>
+                        <option value = "monochrome-light">Monochrome-light</option>
+                        <option value = "analogic">Analogic</option>
+                        <option value = "complement">Complement</option>
+                        <option value = "analogic-complement">Analogic-complement</option>
+                        <option value = "triad">Triad</option>
+                    </select>
+                    <input name="colorCount"
+                    type="number" 
+                    id="counter"
+                    class="counter"
+                    value="5" 
+                    min="2" 
+                    max="10">
+                    <button id="color-btn" class="color-btn">Get Color Scheme</button>
+                </div>
+            </section>
+            <section class="main-container">
+                <div id="color-columns" class="color-columns"></div>
+                <div id="hex-id" class="hex-id"></div>
+            </section>
+        </main>
+        
+        <script src="index.js"></script>
+</body>
+</html>
