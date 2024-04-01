@@ -1,4 +1,4 @@
-const ColorBtn = document.getElementById("color-btn")
+const colorBtn = document.getElementById("color-btn")
 const colorInput = document.getElementById("color")
 const dropdownOptions = document.getElementById("dropdown-options")
 const colorColumns = document.getElementById("color-columns")
