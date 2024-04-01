@@ -15,7 +15,7 @@ ColorBtn.addEventListener("click", function(e) {
 
 
     fetch(url)
-        .then(re => res.json())
+        .then(res => res.json())
         .then(data => {
             let colorHtml = ""
             let hexValueHTML = ""
