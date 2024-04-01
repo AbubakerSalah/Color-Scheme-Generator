@@ -1,6 +1,6 @@
 const colorBtn = document.getElementById("color-btn")
 const colorInput = document.getElementById("color")
-const dropdownOptions = document.getElementById("dropdown-options")
+const dropDownOptions = document.getElementById("dropdown-options")
 const colorColumns = document.getElementById("color-columns")
 const hexId = document.getElementById("hex-id")
 const counter = document.getElementById("counter")
@@ -9,7 +9,7 @@ ColorBtn.addEventListener("click", function(e) {
     e.preventDefault()
 
     const colorInputValue = colorInput.value.slice(1)
-    const optionSelectValue = dropdownOptions.value
+    const optionSelectValue = dropDownOptions.value
     const counterValue = counter.value
     
 
