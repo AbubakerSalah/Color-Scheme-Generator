@@ -24,8 +24,8 @@ ColorBtn.addEventListener("click", function(e) {
                 hexValueHtml += `<p>${color.hex.value}</p>`
             })
 
-            colorColumns.innerHTML = colorScheme
-            hexId.innerHTML = hexValue
+            colorColumns.innerHTML = colorSchemeHtml
+            hexId.innerHTML = hexValueHtml
             
         })
         
