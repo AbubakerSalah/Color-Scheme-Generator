@@ -11,9 +11,9 @@ ColorBtn.addEventListener("click", function(e) {
     const colorInputValue = colorInput.value.slice(1)
     const optionSelectValue = dropdownOptions.value
     const counterValue = counter.value
-    const url = (`https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`)
+    
 
-    fetch(url)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`)
         .then(res => res.json())
         .then(data => {
             let colorScheme = ""
