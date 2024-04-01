@@ -16,12 +16,12 @@ ColorBtn.addEventListener("click", function(e) {
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`)
         .then(res => res.json())
         .then(data => {
-            let colorScheme = ""
-            let hexValue= ""
+            let colorSchemeHtml = ""
+            let hexValueHtml= ""
 
             data.colors.map(color => {
-                colorScheme += `<div class ="color-scheme" style="background-color: ${color.hex.value}"></div>`
-                hexValue += `<p>${color.hex.value}</p>`
+                colorSchemeHtml += `<div class ="color-scheme" style="background-color: ${color.hex.value}"></div>`
+                hexValueHtml += `<p>${color.hex.value}</p>`
             })
 
             colorColumns.innerHTML = colorScheme
