@@ -15,10 +15,10 @@ ColorBtn.addEventListener("click", function(e) {
     
 
     fetch(url)
-        .then(res => res.json())
+        .then( res => res.json())
         .then(data => {
             let colorSchemeHtml = ""
-            let hexValueHtml= ""
+            let hexValueHtml = ""
 
             data.colors.map(color => {
                 colorSchemeHtml += `<div class ="color-scheme" style="background-color: ${color.hex.value}"></div>`
