@@ -13,20 +13,19 @@ ColorBtn.addEventListener("click", function(e) {
     const counterValue = counter.value
     const url = `https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`
 
-
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            let colorHtml = ""
-            let hexValueHTML = ""
+            let colorScheme = ""
+            let hexValue= ""
 
             data.colors.map(color => {
-                colorHtml += `<div class ="color-scheme" style="background-color: ${color.hex.value}"></div>`
-                hexValueHTML += `<p>${color.hex.value}</p>`
+                colorScheme += `<div class ="color-scheme" style="background-color: ${color.hex.value}"></div>`
+                hexValue += `<p>${color.hex.value}</p>`
             })
 
-            colorColumns.innerHTML = colorHtml
-            hexId.innerHTML = hexValueHTML
+            colorColumns.innerHTML = colorScheme
+            hexId.innerHTML = hexValue
             
         })
         
