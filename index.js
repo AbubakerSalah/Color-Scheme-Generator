@@ -5,16 +5,16 @@ const colorColumns = document.getElementById("color-columns")
 const hexId = document.getElementById("hex-id")
 const counter = document.getElementById("counter")
 
-ColorBtn.addEventListener("click", function(e) {
+colorBtn.addEventListener("click", function(e) {
     e.preventDefault()
 
     const colorInputValue = colorInput.value.slice(1)
     const optionSelectValue = dropDownOptions.value
     const counterValue = counter.value
-    const url = `https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`
+    
     
 
-    fetch(url)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${colorInputValue}&mode=${optionSelectValue}&count=${counterValue}`)
         .then( res => res.json())
         .then(data => {
             let colorSchemeHtml = ""
